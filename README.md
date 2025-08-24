@@ -3,9 +3,15 @@
 This repository demonstrates an end-to-end **data engineering pipeline** using Azure services, following the **Medallion Architecture** (Bronze → Silver → Gold).
 
 ---
+<h2 align="center">🏗️ Architecture</h2>
 
-## 🏗️ Architecture
-![Architecture Diagram](architecture/architecture-diagram.png)
+<p align="center">
+  <img src="DE_Architecture.png" alt="Architecture Diagram" width="600"/>
+</p>
+
+
+ <!-- ## Architecture
+![Architecture Diagram](DE_Architecture.png) -->
 
 **Flow:**
 1. Data ingestion with **Azure Data Factory** into **ADLS Gen2** (Bronze).
