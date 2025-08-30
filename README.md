@@ -127,6 +127,7 @@ The project follows the **Medallion Architecture** consisting of three main laye
 - **All compute happens in Databricks**:
   - **Bronze → Silver**: cleansing, standardization, and quality checks in **Databricks (PySpark)**.
   - **Silver → Gold**: business logic, joins, aggregations, and SCD logic **on Databricks compute (clusters/Jobs)**.
+- After creating the Fact tables and the dimensions in the Gold layer, the Data Analyst can now use this data to make SQL queries via the SQL Editor
 - Databricks writes **Silver** and **Gold** datasets back to ADLS (Delta).  
   *(Optional) Final serving to Azure SQL/BI can be triggered by ADF or written directly from Databricks, depending on your setup.*
 
@@ -137,23 +138,23 @@ The project follows the **Medallion Architecture** consisting of three main laye
 
 
 
-<h3 align="center">Gold Schema Ready for Data Analysts</h3>
+<h3 align="center">Gold Schema Ready for Data Analysis</h3>
 <p align="center">
   <img src="screenshots/gold_schema_readydata.jpg" alt="Data Model Pipeline in Databricks" width="700"/>
 </p>
 
 
-
+<!--
 
 ## 📊 Screenshots
 - ADF Pipeline: ![ADF Pipeline](screenshots/adf_pipeline.png)
 - Databricks Notebook: ![Notebook](screenshots/databricks_notebook.png)
 - SQL Table Output: ![SQL Output](screenshots/sql_tables.png)
 
----
+--->
 
 ## 🔑 Learnings
-- Parameterized pipelines in ADF  
+- Parameterized pipelines in ADF for incremental loading of data  
 - PySpark transformations with Databricks  
 - Medallion architecture implementation (Bronze → Silver → Gold)  
 - SCD Type 1 logic with Delta Lake  
@@ -162,5 +163,4 @@ The project follows the **Medallion Architecture** consisting of three main laye
 ---
 
 ## 👤 Author
-Project implemented by **[Your Name]**  
-*(Screenshots/files have been sanitized to remove sensitive subscription/workspace details.)*
+Project implemented by **Akhilesh Kadam** 
