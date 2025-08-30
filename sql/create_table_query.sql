@@ -6,9 +6,9 @@ CREATE TABLE source_cars_data
 	Revenue BIGINT,
 	Units_Sold BIGINT,
 	Date_ID Varchar(200),
-	Day TINYINT,
-	Month TINYINT,
-	Year Varchar(200),
+	Day INT Null,
+	Month INT Null,
+	Year INT Null,
 	BranchName Varchar(2000),
 	DealerName Varchar(2000),
 	Product_Name Varchar(200)
