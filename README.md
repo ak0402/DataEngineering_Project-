@@ -29,6 +29,11 @@ This repository demonstrates an end-to-end **data engineering pipeline** using A
 - Azure SQL Database
 - Power BI (optional)
 
+<h2 align="center">🏗️Architechture with Flow</h2>
+
+<p align="center">
+  <img src="screenshots/DE- Arch1.png" alt="DE_arch1" width="500"/>
+</p>
 ---
 
 ## 📂 Repository Contents
@@ -152,15 +157,56 @@ The project follows the **Medallion Architecture** consisting of three main laye
 - SQL Table Output: ![SQL Output](screenshots/sql_tables.png)
 
 --->
-
+<!--
 ## 🔑 Learnings
 - Parameterized pipelines in ADF for incremental loading of data  
 - PySpark transformations with Databricks  
 - Medallion architecture implementation (Bronze → Silver → Gold)  
 - SCD Type 1 logic with Delta Lake  
-- SQL DB integration for downstream analytics  
+- SQL DB integration for downstream analytics  -->
+
+
+## 📚 Key Learnings from the Project  
+
+Working on this end-to-end Azure Data Engineering project gave me hands-on exposure to real-world challenges and cloud-native solutions.  
+
+### 🔹 1. Azure Data Factory (ADF) – Orchestration & Ingestion  
+- Learned how to design and schedule **ETL pipelines**.  
+- Hands-on with **Linked Services, Datasets, Triggers, and Pipelines**.  
+- Understood how to **ingest raw data** from both **API sources** and **local/Blob storage** into **Azure Data Lake Storage (ADLS)**.  
+- Learned monitoring & debugging of pipeline runs.  
+
+### 🔹 2. Azure Data Lake Storage (ADLS) – Layered Storage  
+- Designed a **layered data lake structure (Bronze, Silver, Gold)**.  
+- Understood why raw data must be immutable (**Bronze**) and how clean data is structured (**Silver → Gold**).  
+- Worked with **Delta format** for efficient data storage, versioning, and ACID compliance.  
+
+### 🔹 3. Databricks & PySpark – Data Transformation & Compute  
+- Gained practical skills in **PySpark** for large-scale data processing.  
+- Learned to handle **null values, duplicates, schema evolution, and data validation checks**.  
+- Implemented **business transformations and aggregations** to build **Gold tables**.  
+- Learned how **Databricks clusters** are used for scalable compute.  
+
+### 🔹 4. Medallion Architecture – Best Practices in Data Engineering  
+- Applied the **Bronze → Silver → Gold** approach for structured data pipelines.  
+- Understood the importance of **separation of concerns** between raw, cleaned, and curated datasets.  
+- Gained exposure to designing a **modular and reusable data pipeline** that is production-ready.  
+
+### 🔹 5. Integration with Analytics & BI  
+- Prepared **Gold datasets** optimized for consumption by BI tools (like Power BI / Azure SQL).  
+- Learned how curated data can power **dashboards and reports** for decision-making.  
+
+### 🔹 6. Real-World Skills Developed  
+- Debugging common errors (e.g., invalid SQL object names, schema mismatches).  
+- Designing pipelines that are **scalable, maintainable, and automated**.  
+- Writing **clean PySpark code** for data wrangling.  
+- Understanding the **end-to-end flow of data in Azure ecosystem**.  
 
 ---
+
+📌 **In summary**: This project helped me strengthen my **cloud data engineering skills** by building an end-to-end pipeline with **ADF, ADLS, Databricks (PySpark), and the Medallion architecture** — exactly how modern data platforms are designed in industry.  
+
+
 
 ## 👤 Author
 Project implemented by **Akhilesh Kadam** 
