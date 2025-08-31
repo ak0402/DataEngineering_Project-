@@ -34,7 +34,7 @@ This repository demonstrates an end-to-end **data engineering pipeline** using A
 <p align="center">
   <img src="screenshots/DE- Arch1.png" alt="DE_arch1" width="500"/>
 </p>
----
+
 
 ## 📂 Repository Contents
 - **/notebooks**: PySpark scripts for Bronze, Silver, and Gold layers.
