@@ -1,6 +1,6 @@
-# 🚀 Azure End-to-End Data Engineering Project – Medallion Architecture
+<h1 align="center"> 🚀 Azure End-to-End Data Engineering Project  Medallion Architecture</h1>
 
-This repository demonstrates an end-to-end **data engineering pipeline** using Azure services, following the **Medallion Architecture** (Bronze → Silver → Gold).
+<h5 align="center">This repository demonstrates an end-to-end **data engineering pipeline** using Azure services, following the **Medallion Architecture** (Bronze → Silver → Gold).</h5>
 
 ---
 <h2 align="center">🏗️ Architecture</h2>
